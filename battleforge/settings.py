@@ -5,10 +5,10 @@ from decouple import Config, RepositoryEnv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Указываем путь к .env.dev
-ENV_FILE = os.path.join(BASE_DIR, '.env.dev')
+# Указываем путь к .env
+ENV_FILE = os.path.join(BASE_DIR, '.env')
 
-# Загружаем переменные из .env.dev
+# Загружаем переменные из .env
 config = Config(RepositoryEnv(ENV_FILE))
 
 # SECURITY WARNING: keep the secret key used in production secret!
