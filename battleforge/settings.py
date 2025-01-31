@@ -1,3 +1,5 @@
+# battleforge/setting.py
+
 from pathlib import Path
 import os
 from decouple import Config, RepositoryEnv
@@ -34,6 +36,7 @@ INSTALLED_APPS = [
     'rest_framework',             # Django REST Framework (API)
     'channels',                   # Поддержка WebSockets (реальное время)
     'django_celery_beat',         # Планировщик задач Celery
+    'rest_framework_simplejwt',   # JWT аутентификация
 
     # project apps
     'battle',    # Боевая система (PvP, PvE, управление боями)
@@ -57,6 +60,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'battleforge.urls'
+
+AUTH_USER_MODEL = 'users.User'
 
 TEMPLATES = [
     {
@@ -103,6 +108,17 @@ CHANNEL_LAYERS = {
 CELERY_BROKER_URL = config('CELERY_BROKER_URL')
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
+
+
+# drf
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
 
 
 # Password validation
