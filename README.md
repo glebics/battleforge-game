@@ -20,3 +20,89 @@
 Создать динамичную и увлекательную карточную стратегию, сочетающую глубокую тактику и красочные сражения!  
 
 📌 **Статус**: Активная разработка 🔧  
+
+```
+battleforge-game
+├─ .env
+├─ Dockerfile
+├─ README.md
+├─ battle
+│  ├─ __init__.py
+│  ├─ admin.py
+│  ├─ apps.py
+│  ├─ consumers.py
+│  ├─ migrations
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ routing.py
+│  └─ tasks.py
+├─ battleforge
+│  ├─ __init__.py
+│  ├─ asgi.py
+│  ├─ celery.py
+│  ├─ settings.py
+│  ├─ urls.py
+│  └─ wsgi.py
+├─ chat
+│  ├─ __init__.py
+│  ├─ admin.py
+│  ├─ apps.py
+│  ├─ migrations
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ tests.py
+│  └─ views.py
+├─ clans
+│  ├─ __init__.py
+│  ├─ admin.py
+│  ├─ apps.py
+│  ├─ migrations
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ tests.py
+│  └─ views.py
+├─ docker-compose.yml
+├─ entrypoint.sh
+├─ heroes
+│  ├─ __init__.py
+│  ├─ admin.py
+│  ├─ apps.py
+│  ├─ migrations
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ tests.py
+│  └─ views.py
+├─ inventory
+│  ├─ __init__.py
+│  ├─ admin.py
+│  ├─ apps.py
+│  ├─ migrations
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ tests.py
+│  └─ views.py
+├─ manage.py
+├─ notifications
+│  ├─ __init__.py
+│  ├─ admin.py
+│  ├─ apps.py
+│  ├─ migrations
+│  │  └─ __init__.py
+│  ├─ models.py
+│  ├─ tasks.py
+│  ├─ tests.py
+│  └─ views.py
+├─ requirements.txt
+└─ users
+   ├─ __init__.py
+   ├─ admin.py
+   ├─ apps.py
+   ├─ migrations
+   │  └─ __init__.py
+   ├─ models.py
+   ├─ serializers.py
+   ├─ tests.py
+   ├─ urls.py
+   └─ views.py
+
+```
